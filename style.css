@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Pushes logo to left, nav to right */
+    align-items: center; /* Aligns them vertically */
+    padding: 10px 20px; /* Adds spacing */
+    z-index: 1000; /* Stacks it on top of everything */;
+    background-color: #b6b5b5;
+}
+
+ul li {
+    list-style-type: none;
+}
+  
+#hero {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#email, #submit {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#submit {
+    background-color: yellow;
+}
+
+#header-img{
+    width: 300px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #header-img {
+        width: 200px;
+    }
+    h1, h2, h3, h4 {
+        font-size: 1.5rem;
+    }
+}
