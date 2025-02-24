@@ -65,13 +65,20 @@ h2 {
     margin: 10px 0;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #email {
     padding: 0px 40px;
 }
 
 #submit {
     background-color: rgb(243, 247, 9);
-    
+    width: 100px
 }
 
 #header-img{
