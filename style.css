@@ -7,6 +7,23 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 1rem;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
 }
 
 header {
@@ -56,16 +73,93 @@ h2 {
     width: 300px;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-pos {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #features {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: center; /* Center all features */
     width: 100%;
-    padding: 20px;
+    padding: 50px 0;
+    height: auto; /* Fix height issue */
+    margin-top: 30px;
 }
 
-h1, h2, h3, h4 {
+#features i {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    font-size: 50px;
+  }
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 70vw;
+    padding: 5px;
+}
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    width: 100%;
+    margin: 110px 0px;
+
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+#footer {
+    background-color: #b6b5b5;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+#footer span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1, h2 {
     font-size: 2rem;
 }
 
