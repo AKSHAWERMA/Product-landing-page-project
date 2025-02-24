@@ -65,8 +65,13 @@ h2 {
     margin: 10px 0;
 }
 
+#email {
+    padding: 0px 40px;
+}
+
 #submit {
-    background-color: yellow;
+    background-color: rgb(243, 247, 9);
+    
 }
 
 #header-img{
@@ -74,43 +79,37 @@ h2 {
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
-.icon-pos {
+.grid {
     display: flex;
-    justify-content: flex-start;
 }
-
-#features {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center all features */
-    width: 100%;
-    padding: 50px 0;
-    height: auto; /* Fix height issue */
-    margin-top: 30px;
-}
-
-#features i {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 125px;
-    width: 20vw;
-    color: darkorange;
-    font-size: 50px;
-  }
 
 .feature {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+     /* Aligns icon and text vertically */
+    gap: 20px; /* Creates space between icon and text */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.feature i {
+    font-size: 50px; /* Bigger icons */
+    color: #ff6600;
+    width: 80px; /* Ensures icons have the same space */
+    text-align: center; /* Keeps them aligned */
+}
+
+.feature-text {
+    flex: 1; /* Allows text to take remaining space */
+    text-align: left; /* Aligns text to the left */
     height: 125px;
-    width: 70vw;
+    width: 80vw;
     padding: 5px;
 }
+
 
 #how-it-works {
     display: flex;
